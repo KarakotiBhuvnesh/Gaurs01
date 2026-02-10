@@ -1,22 +1,59 @@
 export default function Hero() {
   return (
-    <section className="bg-primary text-white text-center px-6 py-20">
-      <h1 className="text-4xl md:text-6xl font-bold">
-        Studios Inside NCR’s Biggest Retail Destination
-      </h1>
-      <p className="mt-4 text-lg">
-        Live Smart. Invest at NCR’s Next Growth Hub
-      </p>
-      <p className="mt-2">
-        Gateway of Yamuna Expressway & Jewar Airport
-      </p>
-      <div className="mt-8 flex gap-4 justify-center flex-wrap">
-        <button className="bg-gold px-6 py-3">Enquire Now</button>
-        <button className="border px-6 py-3">Get Pricing</button>
+    <section
+      id="overview"
+      className="relative h-[90vh] flex items-center justify-center text-white"
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1600585154340-be6161a56a0c)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      <div className="relative z-10 text-center px-6 max-w-5xl">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          NCR’s Biggest Retail & Lifestyle Destination
+        </h1>
+
+        <p className="mt-4 text-xl">
+          Smart Studio Apartments at the Gateway of Yamuna Expressway &
+          Jewar Airport
+        </p>
+
+        <div className="mt-4 text-lg">
+          📍 Gaur Yamuna City | Yamuna Expressway <br />
+          ✈ Minutes from Jewar International Airport
+        </div>
+
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <button className="btn-primary">Register Now</button>
+          <button className="border border-white px-6 py-3 rounded">
+            Get Pricing
+          </button>
+        </div>
+
+        <p className="mt-4 text-sm text-slate-200">
+          Limited inventory • Early-bird benefits
+        </p>
+
+        <div className="mt-16 grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        {[
+          "Biggest Retail Destination",
+          "Near Jewar Airport",
+          "High Rental Demand",
+          "Studio Apartments"
+        ].map((item) => (
+          <div
+            key={item}
+            className="glass rounded-xl p-6 text-center text-white"
+          >
+            <p className="font-semibold">{item}</p>
+          </div>
+        ))}
       </div>
-      <p className="mt-4 text-sm opacity-80">
-        Limited inventory • Early-bird benefits available
-      </p>
+      </div>
     </section>
-  )
+  );
 }

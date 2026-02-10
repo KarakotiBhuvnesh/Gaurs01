@@ -1,15 +1,31 @@
+import ImageBlock from "./ImageBlock";
+
 export default function Standout() {
   return (
-    <section className="px-6 py-16 max-w-6xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-8">
-        A Destination, Not Just a Project
-      </h2>
-      <ul className="grid md:grid-cols-2 gap-4 text-lg">
-        <li>✔ One of the biggest retail & entertainment hubs</li>
-        <li>✔ Multiplex, food courts & anchor stores</li>
-        <li>✔ High daily footfall ecosystem</li>
-        <li>✔ Studios above retail = constant demand</li>
+    <section id="destination" className="section bg-white">
+
+
+    <ImageBlock
+      image="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
+    >
+      <h2 className="h2">A Destination, Not Just a Project</h2>
+
+      <p className="p mb-6">
+        One of the biggest upcoming retail & entertainment destinations on
+        Yamuna Expressway, designed to attract massive daily footfall.
+      </p>
+
+      <ul className="space-y-2 text-lg">
+        <li>✔ Multiplex & entertainment zones</li>
+        <li>✔ Food courts & anchor retail brands</li>
+        <li>✔ Banquet & leisure spaces</li>
+        <li>✔ Studio apartments above retail ecosystem</li>
       </ul>
+
+      <button className="btn-primary mt-6">
+        Get Project Details Now
+      </button>
+    </ImageBlock>
     </section>
-  )
+  );
 }
