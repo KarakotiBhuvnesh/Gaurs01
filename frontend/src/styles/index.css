@@ -74,3 +74,37 @@ section {
 .h3 {
   @apply text-xl font-semibold;
 }
+
+/* Navbar height reference */
+:root {
+  --navbar-height: 96px;
+}
+
+/* Offset sections correctly for sticky navbar */
+section {
+  scroll-margin-top: var(--navbar-height);
+}
+
+
+/* Mobile-first typography tuning */
+@media (max-width: 640px) {
+  .h2 {
+    @apply text-2xl;
+  }
+
+  .p {
+    @apply text-base;
+  }
+
+  .section {
+    @apply py-14 px-4;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    padding-bottom: 64px;
+  }
+}
+
+

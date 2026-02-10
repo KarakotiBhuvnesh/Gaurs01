@@ -1,19 +1,21 @@
 export default function Hero() {
   return (
     <section
-      id="overview"
-      className="relative h-[90vh] flex items-center justify-center text-white"
-      style={{
-        backgroundImage:
-          "url(https://images.unsplash.com/photo-1600585154340-be6161a56a0c)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+        id="overview"
+        className="relative min-h-[120vh] flex items-center justify-center text-white pt-[var(--navbar-height)]"
+        style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1600585154340-be6161a56a0c)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
       <div className="absolute inset-0 bg-black/60"></div>
 
-      <div className="relative z-10 text-center px-6 max-w-5xl">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+      <div className="relative z-10 text-center px-4 max-w-3xl pt-20 md:pt-24">
+
+        <h1 className="text-3xl md:text-6xl font-bold leading-tight">
+
           NCR’s Biggest Retail & Lifestyle Destination
         </h1>
 
@@ -27,7 +29,8 @@ export default function Hero() {
           ✈ Minutes from Jewar International Airport
         </div>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
+        <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+
           <button className="btn-primary">Register Now</button>
           <button className="border border-white px-6 py-3 rounded">
             Get Pricing

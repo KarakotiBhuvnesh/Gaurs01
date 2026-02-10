@@ -42,7 +42,8 @@ export default function Navbar() {
       }`}
     >
       <div className="backdrop-blur-md bg-white/55 border-b border-white/20">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 py-4 md:py-5 flex items-center justify-between">
+
           
           {/* Logo */}
           <div className="text-xl font-semibold tracking-tight">
@@ -88,7 +89,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="block px-6 py-4 text-slate-800 border-b"
+                className="block px-6 py-5 text-lg text-slate-800 border-b"
                 onClick={() => setOpen(false)}
               >
                 {link.name}
