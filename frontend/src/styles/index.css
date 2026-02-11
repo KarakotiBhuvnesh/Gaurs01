@@ -5,6 +5,9 @@
 /* ======================================
    GLOBAL RESET & BASE (index.css part)
 ====================================== */
+/* ======================================
+   GLOBAL RESET & BASE
+====================================== */
 *,
 *::before,
 *::after {
@@ -63,7 +66,7 @@ select {
 }
 
 /* ======================================
-   GLOBAL SEXTION RHYTHM
+   GLOBAL SECTION RHYTHM
 ====================================== */
 section {
   width: 100%;
@@ -91,13 +94,13 @@ h2 {
   }
 }
 
-/* Premium smoothness */
+/* Smooth premium feel */
 * {
   transition: all 0.25s ease;
 }
 
 /* ======================================
-   LIMITED OFFER
+   LIMITED OFFER (FIXED OVERLAP)
 ====================================== */
 .limited-offer {
   background: linear-gradient(120deg, var(--primary-dark), var(--primary));
@@ -105,11 +108,8 @@ h2 {
   text-align: center;
   position: relative;
   overflow: hidden;
-  margin-top: 120px;
-  padding-top: 100px;
+  margin-top: 120px; /* prevents overlap */
 }
-
-
 
 .limited-offer::after {
   content: "";
@@ -238,7 +238,7 @@ h2 {
 }
 
 /* ======================================
-   TRUST SEXTION
+   TRUST SECTION
 ====================================== */
 .trust-section {
   background: #ffffff;
@@ -267,7 +267,7 @@ h2 {
 }
 
 /* ======================================
-   ROI SEXTION
+   ROI SECTION
 ====================================== */
 .roi-section {
   background: var(--bg-soft);
@@ -363,4 +363,3 @@ h2 {
   color: #666;
   text-align: center;
 }
-

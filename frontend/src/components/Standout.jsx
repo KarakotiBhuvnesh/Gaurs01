@@ -4,7 +4,6 @@ export default function Standout() {
   return (
     <section id="destination" className="section bg-white">
 
-
     <ImageBlock
       image="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
     >
