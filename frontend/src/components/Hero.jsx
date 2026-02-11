@@ -5,7 +5,7 @@ export default function Hero() {
       className="relative min-h-[120vh] flex items-center justify-center text-white pt-[var(--navbar-height)]"
       style={{
         backgroundImage:
-          "url(https://images.unsplash.com/photo-1600585154340-be6161a56a0c)",
+          "url(https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&q=80)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -34,14 +34,6 @@ export default function Hero() {
             <span>📍</span>
             <span className="font-semibold">Gaur Yamuna City | YEIDA, Greater Noida</span>
           </div>
-          <div className="flex items-center justify-center gap-2">
-            <span>✈️</span>
-            <span className="font-semibold">24 KM from Jewar International Airport</span>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <span>💰</span>
-            <span className="font-semibold">Starting ~₹1 Cr* | High Rental Yield 7-9%</span>
-          </div>
         </div>
         
         {/* CTA Buttons */}
@@ -60,12 +52,12 @@ export default function Hero() {
         </p>
         
         {/* Key Highlights Grid */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        <div className="mt-10 mb-10 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
           {[
             {  text: "Biggest Retail Hub" },
             {  text: "Near Upcoming Jewar Airport" },
             {  text: "High Rental Demand" },
-            {  text: "Smart Studio Living" }
+            {  text: "Iconic Service Apartments" }
           ].map((item) => (
             <div
               key={item.text}

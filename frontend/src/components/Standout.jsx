@@ -60,12 +60,7 @@ export default function Standout() {
               </ul>
             </div>
 
-            {/* Key Value Proposition */}
-            <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-xl p-6">
-              <p className="text-lg font-semibold">
-                💡 Your studio apartment sits above a thriving commercial ecosystem—ensuring <span className="underline">consistent rental demand</span> and <span className="underline">strong appreciation</span>.
-              </p>
-            </div>
+
 
             {/* Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-4">
