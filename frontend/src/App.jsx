@@ -2,9 +2,6 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Standout from "./components/Standout";
 import Studios from "./components/Studios";
-import Location from "./components/Location";
-import Growth from "./components/Growth";
-import Returns from "./components/Returns";
 import Amenities from "./components/Amenities";
 import Buyers from "./components/Buyers";
 import FinalCTA from "./components/FinalCTA";
@@ -39,17 +36,14 @@ export default function App() {
       {/* Add Parallax Section Here */}
       <ParallaxSection />
       
-      <Growth />
       <GrowthTimeline />
-      <Location />
+      <ROISection />
       <Infrastructure />
       
       {/* You can add another Parallax Section */}
       <ParallaxSection />
       
       <Amenities />
-      <ROISection />
-      <Returns />
       <TrustSection />
       <Buyers />
       <LeadForm />

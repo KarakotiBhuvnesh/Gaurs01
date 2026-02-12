@@ -2,49 +2,44 @@ import { projectData } from "../data/projectData";
 
 const ProjectGlance = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute top-10 right-10 w-72 h-72 bg-orange-100 rounded-full blur-3xl opacity-20"></div>
-      <div className="absolute bottom-10 left-10 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-20"></div>
-      
-      <div className="max-w-6xl mx-auto relative z-10">
+    <section className="py-12 px-4 sm:py-16 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+      {/* Background decorative elements (softened + smaller) */}
+      <div className="pointer-events-none absolute top-8 right-4 w-40 h-40 bg-orange-100 rounded-full blur-3xl opacity-20" />
+      <div className="pointer-events-none absolute bottom-8 left-4 w-40 h-40 bg-blue-100 rounded-full blur-3xl opacity-20" />
+
+      <div className="max-w-5xl mx-auto relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-10 sm:mb-14">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
             Project at a Glance
           </h2>
-          <p className="text-xl text-gray-600">Smart Investment. Smart Living. Smart Returns.</p>
-          <div className="w-24 h-1 bg-gradient-to-r from-orange-600 to-red-600 mx-auto rounded-full mt-4"></div>
+          <p className="text-sm sm:text-base text-gray-600">
+            Smart Investment • Smart Living • Smart Returns
+          </p>
+          <div className="w-16 h-1 bg-gradient-to-r from-orange-600 to-red-600 mx-auto rounded-full mt-3" />
         </div>
 
-        {/* Stats Grid - 3 columns for better balance with 5 items */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {projectData.specs.map((item, index) => (
+        {/* Stats Grid – compact cards, mobile-first */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
+          {projectData.specs.slice(0, 4).map((item, index) => (
             <div
               key={index}
-              className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 overflow-hidden"
+              className="group relative bg-white rounded-xl p-4 sm:p-5 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100"
             >
-              {/* Animated gradient background on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
-              {/* Content */}
               <div className="relative z-10 text-center">
-                {/* Value - Large Display */}
-                <div className="text-4xl font-bold bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent mb-4">
+                {/* Value */}
+                <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent mb-2">
                   {item.value}
                 </div>
-                
+
                 {/* Label */}
-                <div className="text-sm font-semibold text-gray-600 uppercase tracking-wider leading-relaxed">
+                <div className="text-[11px] sm:text-xs font-semibold text-gray-600 uppercase tracking-wide leading-snug">
                   {item.label}
                 </div>
-                
-                {/* Decorative line */}
-                <div className="mt-4 h-1 w-16 bg-gradient-to-r from-orange-500 via-red-500 to-transparent mx-auto rounded-full transform scale-0 group-hover:scale-100 transition-transform duration-500"></div>
               </div>
 
-              {/* Corner accent */}
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-orange-500/10 via-red-500/10 to-transparent rounded-bl-full transform translate-x-10 -translate-y-10 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500"></div>
+              {/* Simple accent on hover */}
+              <div className="absolute inset-x-6 bottom-2 h-0.5 bg-gradient-to-r from-orange-500 via-red-500 to-transparent scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
             </div>
           ))}
         </div>
