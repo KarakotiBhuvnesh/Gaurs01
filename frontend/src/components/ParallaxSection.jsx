@@ -3,7 +3,7 @@ export default function ParallaxSection() {
     <section 
       className="relative h-[500px] md:h-[600px] bg-fixed bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url(/src/img/hero.png)",
+        backgroundImage: "url(/img/hero.png)",
       }}
     >
       {/* Dark Overlay */}

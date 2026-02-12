@@ -30,7 +30,7 @@ export default function Studios() {
         {/* Image Block with Content */}
         <ImageBlock
           reverse
-          image="/src/img/hero.png"
+          image="/img/hero.png"
         >
           <div className="space-y-5 sm:space-y-6">
             {/* Featuring Section */}
@@ -116,7 +116,7 @@ export default function Studios() {
           {/* Floor Plan Image with Overlay */}
           <div className="relative rounded-xl overflow-hidden shadow-xl max-w-[240px] sm:max-w-xs md:max-w-md mx-auto">
             <img
-              src="/src/img/floor-plan.png"
+              src="/img/floor-plan.png"
               alt="Studio Apartment Floor Plan"
               className="w-full h-auto"
             />

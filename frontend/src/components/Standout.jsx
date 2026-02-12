@@ -22,7 +22,7 @@ export default function Standout() {
 
         {/* Image Block */}
         <div className="mb-6 sm:mb-8">
-          <ImageBlock image="/src/img/hero.png">
+          <ImageBlock image="/img/hero.png">
             <div className="space-y-4 sm:space-y-6">
               {/* Project Features */}
               <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-4 sm:p-6 border-l-4 border-orange-600">
