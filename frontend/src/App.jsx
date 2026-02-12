@@ -29,8 +29,8 @@ export default function App() {
       <Navbar />
       <Hero />
       <Standout />
-      <LimitedOffer onCTAClick={scrollToForm} />
       <ProjectGlance />
+      <LimitedOffer onCTAClick={scrollToForm} />
       <Studios />
       
       {/* Add Parallax Section Here */}

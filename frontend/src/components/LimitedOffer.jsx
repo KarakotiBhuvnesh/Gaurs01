@@ -1,15 +1,13 @@
 const LimitedOffer = ({ onCTAClick }) => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-neutral-900 via-orange-950 to-black py-12 px-4 sm:py-14 sm:px-6 text-white">
+    <section className="relative overflow-hidden bg-gradient-to-br from-neutral-900 via-orange-950 to-black py-6 px-4 sm:py-10 sm:px-6 text-white">
       {/* Soft Glow Background Effect (smaller on mobile) */}
       <div className="pointer-events-none absolute -top-32 -right-32 w-64 h-64 bg-orange-600/20 rounded-full blur-3xl" />
       <div className="pointer-events-none absolute -bottom-32 -left-32 w-56 h-56 bg-red-500/15 rounded-full blur-3xl" />
 
       <div className="relative max-w-4xl mx-auto text-center">
-
-
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug mb-3">
           Secure Your Investment Before{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">
             Prices Rise
@@ -17,32 +15,33 @@ const LimitedOffer = ({ onCTAClick }) => {
         </h2>
 
         {/* Subtext (shorter) */}
-        <p className="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base mb-6 leading-relaxed">
-          Early buyers get priority allotment and pre-launch pricing near Jewar
-          Airport.
+        <p className="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base mb-5 leading-relaxed">
+          Early buyers get priority allotment and pre-launch pricing near Jewar Airport.
         </p>
 
         {/* Benefits Grid */}
-        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-3 sm:gap-4 max-w-4xl mx-auto">
-          <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:bg-white/10 transition-all">
-            <div className="text-2xl mb-2">🎯</div>
-            <h3 className="font-bold text-sm mb-1">Priority Units</h3>
-            <p className="text-xs text-gray-400">Best units for early investors</p>
+        <div className="grid grid-cols-3 gap-2.5 sm:gap-3 max-w-4xl mx-auto">
+          <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/10 hover:bg-white/10 transition-all">
+            <div className="text-xl sm:text-2xl mb-1.5">🎯</div>
+            <h3 className="font-bold text-xs sm:text-sm mb-0.5">Priority Units</h3>
+            <p className="text-[10px] sm:text-xs text-gray-400">Best units for early investors</p>
           </div>
-          <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:bg-white/10 transition-all">
-            <div className="text-2xl mb-2">💰</div>
-            <h3 className="font-bold text-sm mb-1">Pre-Launch Rates</h3>
-            <p className="text-xs text-gray-400">Lock prices before launch</p>
+
+          <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/10 hover:bg-white/10 transition-all">
+            <div className="text-xl sm:text-2xl mb-1.5">💰</div>
+            <h3 className="font-bold text-xs sm:text-sm mb-0.5">Pre-Launch Rates</h3>
+            <p className="text-[10px] sm:text-xs text-gray-400">Lock prices before launch</p>
           </div>
-          <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:bg-white/10 transition-all">
-            <div className="text-2xl mb-2">📈</div>
-            <h3 className="font-bold text-sm mb-1">Better Upside</h3>
-            <p className="text-xs text-gray-400">Early entry, higher growth</p>
+
+          <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/10 hover:bg-white/10 transition-all">
+            <div className="text-xl sm:text-2xl mb-1.5">📈</div>
+            <h3 className="font-bold text-xs sm:text-sm mb-0.5">Better Upside</h3>
+            <p className="text-[10px] sm:text-xs text-gray-400">Early entry, higher growth</p>
           </div>
         </div>
 
         {/* Urgency Messaging (shorter) */}
-        <div className="bg-orange-600/15 border mt-5 border-orange-500/40 rounded-lg p-4 mb-6 max-w-xl mx-auto">
+        <div className="bg-orange-600/15 border mt-4 border-orange-500/40 rounded-lg p-3 mb-5 max-w-xl mx-auto">
           <p className="text-orange-300 font-semibold text-xs sm:text-sm">
             ⏰ Limited studios • Prices increase post-launch
           </p>
@@ -51,7 +50,7 @@ const LimitedOffer = ({ onCTAClick }) => {
         {/* CTA Button */}
         <button
           onClick={onCTAClick}
-          className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-orange-600 to-red-600 px-8 py-3 text-sm sm:text-base font-bold text-white shadow-xl shadow-orange-600/40 hover:from-orange-700 hover:to-red-700 hover:scale-105 transition-all duration-300"
+          className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-orange-600 to-red-600 px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-bold text-white shadow-xl shadow-orange-600/40 hover:from-orange-700 hover:to-red-700 hover:scale-105 active:scale-95 transition-all duration-300"
         >
           <span>Unlock Pre-Launch Offer</span>
           <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -60,7 +59,7 @@ const LimitedOffer = ({ onCTAClick }) => {
         </button>
 
         {/* Trust Micro-copy */}
-        <p className="mt-4 text-[11px] sm:text-xs text-gray-400">
+        <p className="mt-3 text-[10px] sm:text-xs text-gray-400">
           🔒 No spam. Your details stay private.
         </p>
       </div>

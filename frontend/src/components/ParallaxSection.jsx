@@ -3,7 +3,7 @@ export default function ParallaxSection() {
     <section 
       className="relative h-[500px] md:h-[600px] bg-fixed bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&q=80')",
+        backgroundImage: "url(/src/img/hero.png)",
       }}
     >
       {/* Dark Overlay */}
@@ -19,7 +19,7 @@ export default function ParallaxSection() {
             </span>
           </h2>
           <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
-            Premium studio apartments just 24km from Jewar International Airport
+            Premium studio apartments just 24km from Noida International Airport
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
