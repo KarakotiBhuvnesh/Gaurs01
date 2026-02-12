@@ -3,21 +3,19 @@ export default function Hero() {
     <section
       id="overview"
       className="relative min-h-screen flex items-center justify-center text-white overflow-hidden pt-[var(--navbar-height)]"
+      style={{
+        backgroundImage: "url(/img/hero.png)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
     >
-      {/* Background image layer */}
-      <div className="absolute inset-0">
-        <img
-          src="/src/img/hero.png"
-          alt="Gaur Yamuna City Studio Apartments"
-          className="h-full w-full object-cover object-center"
-        />
-        {/* Dark overlay with gradient for depth */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-slate-900/70 to-black/85" />
-        
-        {/* Glow effects for flashy look */}
-        <div className="absolute -top-20 sm:-top-32 right-[-15%] sm:right-[-10%] w-64 h-64 sm:w-96 sm:h-96 bg-amber-500/25 blur-3xl rounded-full animate-pulse" />
-        <div className="absolute bottom-[-15%] sm:bottom-[-20%] left-[-15%] sm:left-[-10%] w-80 h-80 sm:w-[500px] sm:h-[500px] bg-indigo-500/20 blur-3xl rounded-full" />
-      </div>
+      {/* Dark overlay with gradient for depth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-slate-900/70 to-black/85" />
+      
+      {/* Glow effects for flashy look */}
+      <div className="absolute -top-20 sm:-top-32 right-[-15%] sm:right-[-10%] w-64 h-64 sm:w-96 sm:h-96 bg-amber-500/25 blur-3xl rounded-full animate-pulse" />
+      <div className="absolute bottom-[-15%] sm:bottom-[-20%] left-[-15%] sm:left-[-10%] w-80 h-80 sm:w-[500px] sm:h-[500px] bg-indigo-500/20 blur-3xl rounded-full" />
 
       {/* Content wrapper */}
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl py-12 sm:pt-20 sm:pb-16">
@@ -56,12 +54,12 @@ export default function Hero() {
             </div>
             <div className="hidden sm:block w-px h-8 bg-white/20"></div>
             <div className="text-xs sm:text-sm text-yellow-300 font-semibold">
-              Minutes from Jewar International Airport
+              Minutes from Noida International Airport
             </div>
           </div>
         </div>
 
-        {/* CTA Buttons - full width on mobile */}
+        {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-2.5 sm:gap-3 mb-5 sm:mb-6 px-2">
           <button className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold px-6 sm:px-8 py-3 sm:py-3.5 rounded-full shadow-[0_15px_40px_rgba(234,88,12,0.4)] hover:scale-105 active:scale-95 transition-all text-sm sm:text-base">
             Register Now - Get Early Access Pricing
@@ -76,11 +74,11 @@ export default function Hero() {
           ⚡ Limited Inventory Available • Early-Bird Benefits • Act Now!
         </p>
 
-        {/* Key highlights - 2x2 grid on mobile */}
+        {/* Key highlights */}
         <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-2 sm:gap-2.5 max-w-3xl mx-auto px-2">
           {[
             "Biggest Retail Hub",
-            "Near Jewar Airport",
+            "Near Noida Airport",
             "High Rental Demand",
             "Iconic Service Apartments",
           ].map((item) => (
