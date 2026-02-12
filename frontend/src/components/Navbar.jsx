@@ -15,6 +15,14 @@ export default function Navbar() {
     { name: "Amenities", href: "#amenities" },
   ];
 
+  const handleScrollToForm = () => {
+    const form = document.getElementById("lead-form");
+    if (form) {
+      form.scrollIntoView({ behavior: "smooth" });
+    }
+    setOpen(false); // Close mobile menu if open
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -41,41 +49,40 @@ export default function Navbar() {
         show ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="backdrop-blur-md bg-white/55 border-b border-white/20">
+      <div className="backdrop-blur-md bg-slate-900/30 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-4 md:py-5 flex items-center justify-between">
 
-          
           {/* Logo */}
-          <div className="text-xl font-semibold tracking-tight">
+          <div className="text-xl font-semibold tracking-tight text-white">
             Gaur Yamuna City
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex gap-8 text-sm font-medium text-slate-800">
+          <nav className="hidden md:flex gap-8 text-sm font-medium text-white/90">
             {links.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="relative hover:text-yellow-600 transition after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-yellow-500 after:transition-all hover:after:w-full"
+                className="relative hover:text-yellow-400 transition after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-yellow-400 after:transition-all hover:after:w-full"
               >
                 {link.name}
               </a>
             ))}
           </nav>
 
-          {/* Desktop CTA */}
+          {/* Desktop CTA - Changed to button with onClick */}
           <div className="hidden md:block">
-            <a
-              href="#enquire"
-              className="bg-yellow-500 text-black px-5 py-2.5 rounded-md font-semibold hover:bg-yellow-400 transition"
+            <button
+              onClick={handleScrollToForm}
+              className="bg-yellow-500 text-black px-5 py-2.5 rounded-md font-semibold hover:bg-yellow-400 transition shadow-lg"
             >
               Enquire Now
-            </a>
+            </button>
           </div>
 
           {/* Mobile Toggle */}
           <button
-            className="md:hidden text-2xl"
+            className="md:hidden text-2xl text-white"
             onClick={() => setOpen(!open)}
           >
             ☰
@@ -84,24 +91,24 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {open && (
-          <div className="md:hidden bg-white/95 backdrop-blur border-t">
+          <div className="md:hidden bg-slate-900/90 backdrop-blur border-t border-white/10">
             {links.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="block px-6 py-5 text-lg text-slate-800 border-b"
+                className="block px-6 py-5 text-lg text-white/90 border-b border-white/10 hover:bg-white/5 transition"
                 onClick={() => setOpen(false)}
               >
                 {link.name}
               </a>
             ))}
             <div className="px-6 py-4">
-              <a
-                href="#enquire"
-                className="block text-center bg-yellow-500 py-3 rounded-md font-semibold"
+              <button
+                onClick={handleScrollToForm}
+                className="block w-full text-center bg-yellow-500 py-3 rounded-md font-semibold text-black hover:bg-yellow-400 transition"
               >
                 Enquire Now
-              </a>
+              </button>
             </div>
           </div>
         )}
