@@ -4,7 +4,6 @@ import Standout from "./components/Standout";
 import Studios from "./components/Studios";
 import Amenities from "./components/Amenities";
 import Buyers from "./components/Buyers";
-import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 import MobileCTA from "./components/MobileCTA";
 import ProjectGlance from "./components/ProjectGlance";
@@ -47,7 +46,6 @@ export default function App() {
       <TrustSection />
       <Buyers />
       <LeadForm />
-      <FinalCTA />
       <Footer />
       <MobileCTA />
     </>
