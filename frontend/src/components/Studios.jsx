@@ -116,16 +116,16 @@ export default function Studios() {
           {/* Floor Plan Image with Overlay */}
           <div className="relative rounded-xl overflow-hidden shadow-xl max-w-[240px] sm:max-w-xs md:max-w-md mx-auto">
             <img
-              src="/img/floor-plan.png"
+              src="/img/floor-plan.jpeg"
               alt="Studio Apartment Floor Plan"
-              className="w-full h-auto"
+              className="w-full h-auto blur-sm opacity-60"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60 flex items-end justify-center pb-3 sm:pb-4">
               <button
                 onClick={handleScrollToForm}
                 className="bg-white border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-bold px-3 sm:px-5 md:px-6 py-1.5 sm:py-2 md:py-2.5 rounded-lg transition-all text-[10px] sm:text-xs md:text-sm shadow-lg hover:shadow-xl active:scale-95"
               >
-                Get Floor Plans
+                View Plan
               </button>
             </div>
           </div>

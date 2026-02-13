@@ -40,9 +40,6 @@ export default function App() {
       <ROISection />
       <Infrastructure />
       
-      {/* You can add another Parallax Section */}
-      <ParallaxSection />
-      
       <TrustSection />
       <Buyers />
       <LeadForm />

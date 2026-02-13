@@ -1,7 +1,11 @@
+import React from "react";
+
 export default function Hero() {
   const handleScrollToCta = () => {
-    const el = document.getElementById("cta");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    const el = document.getElementById("lead-form");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -12,10 +16,10 @@ export default function Hero() {
       {/* Background image layer */}
       <div className="absolute inset-0">
         <img
-        src="/img/hero.png"
-        alt="Gaur Yamuna City Studio Apartments"
-        className="h-full w-full object-cover object-left md:object-left-top"
-      />
+          src="/img/hero.png"
+          alt="Gaur Yamuna City Studio Apartments"
+          className="h-full w-full object-cover object-left md:object-left-top"
+        />
 
         {/* Darker center band for better text contrast */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-black/5 to-black/5" />
@@ -58,15 +62,17 @@ export default function Hero() {
                 <div className="inline-flex items-center gap-3 rounded-2xl bg-white/8 backdrop-blur border border-white/20 px-4 py-3 shadow-[0_18px_45px_rgba(0,0,0,0.6)]">
                   <span className="text-xl sm:text-2xl">📍</span>
                   <div className="text-left">
-                    <div className="text-sm sm:text-base font-semibold">Gaur Yamuna City</div>
+                    <div className="text-sm sm:text-base font-semibold">
+                      Gaur Yamuna City
+                    </div>
                     <div className="text-[11px] sm:text-xs text-gray-200/90">
-                      YEIDA, Greater Noida • Near Jewar International Airport
+                      YEIDA, Greater Noida • Near NOIDA International Airport
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* CTA Buttons */}
+              {/* CTA Buttons: all go to final CTA */}
               <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-2.5 sm:gap-3 mb-4">
                 <button
                   onClick={handleScrollToCta}
@@ -89,32 +95,37 @@ export default function Hero() {
 
               {/* Key highlights (tight) */}
               <div className="mt-4 grid grid-cols-3 gap-2 max-w-md">
-                {["Retail Hub", "Near Airport", "High Rentals"].map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-xl bg-white/8 border border-white/20 px-2 py-2 text-[9px] sm:text-[11px] text-center hover:bg-white/14 transition-all"
-                  >
-                    <span className="font-semibold">{item}</span>
-                  </div>
-                ))}
+                {["Retail Hub", "Luxury Hotel", "High Multi-Level Parking"].map(
+                  (item) => (
+                    <button
+                      key={item}
+                      type="button"
+                      onClick={handleScrollToCta}
+                      className="rounded-xl bg-white/8 border border-white/20 px-2 py-2 text-[9px] sm:text-[11px] text-center hover:bg-white/14 transition-all cursor-pointer"
+                    >
+                      <span className="font-semibold">{item}</span>
+                    </button>
+                  )
+                )}
               </div>
             </div>
           </div>
 
           {/* RIGHT: RERA image */}
-          <div className="flex md:items-end justify-center md:justify-end">
-            <div className="text-center md:text-right max-w-xs sm:max-w-sm md:max-w-md w-full">
-              <img
-                src="/img/rera.jpg"
-                alt="Project RERA Registration"
-                className="w-2/3sm:w-3/4md:w-fullmax-w-[380px]sm:max-w-[420px]md:max-w-[480px]mx-autoh-autoobject-containdrop-shadow-[0_18px_55px_rgba(0,0,0,0.85)]
-                "
-              />
-              <p className="mt-3 text-[11px] sm:text-xs text-gray-100/95">
-                RERA compliant project ensuring transparency and security for your investment.
-              </p>
-            </div>
-          </div>
+{/* RIGHT: RERA image */}
+<div className="flex md:items-end justify-center md:justify-end">
+  <div className="bg-white/40 md:bg-white/50 border border-white/10 rounded-3xl px-4 sm:px-6 md:px-7 py-5 sm:py-7 shadow-[0_24px_70px_rgba(0,0,0,0.7)] backdrop-blur opacity-80 text-center md:text-right max-w-xs sm:max-w-sm md:max-w-md w-full">
+    <img
+      src="/img/rera.png"
+      alt="Project RERA Registration"
+      className="w-2/3 sm:w-3/4 md:w-full max-w-[380px] sm:max-w-[420px] md:max-w-[480px] mx-auto h-auto object-contain drop-shadow-[0_18px_55px_rgba(0,0,0,0.85)]"
+    />
+    <p className="mt-3 text-xs sm:text-sm text-black font-bold">
+      RERA compliant project ensuring transparency and security for your investment.
+    </p>
+
+  </div>
+</div>
 
         </div>
       </div>
