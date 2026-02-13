@@ -53,9 +53,13 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 py-4 md:py-5 flex items-center justify-between">
 
           {/* Logo */}
-          <div className="text-xl font-semibold tracking-tight text-white">
-            Gaur Yamuna City
-          </div>
+          <a href="#overview" className="flex items-center gap-2">
+            <img
+              src="/img/loggo.jpg"
+              alt="Gaur Yamuna City"
+              className="h-8 sm:h-9 md:h-10 w-auto object-contain"
+            />
+          </a>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex gap-8 text-sm font-medium text-white/90">

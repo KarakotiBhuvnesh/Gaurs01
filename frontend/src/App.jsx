@@ -29,6 +29,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <Standout />
+      <Amenities />
       <ProjectGlance />
       <LimitedOffer onCTAClick={scrollToForm} />
       <Studios />
@@ -43,7 +44,6 @@ export default function App() {
       {/* You can add another Parallax Section */}
       <ParallaxSection />
       
-      <Amenities />
       <TrustSection />
       <Buyers />
       <LeadForm />

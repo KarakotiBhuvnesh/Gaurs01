@@ -83,12 +83,21 @@ export default function Footer() {
               <span>•</span>
               <a href="#" className="text-orange-400 hover:underline">Terms</a>
             </p>
-            <p className="flex items-center gap-2">
-              <span className="px-2 py-0.5 bg-orange-900/30 text-orange-400 rounded-full font-medium border border-orange-700 text-[9px]">
-                RERA Approved
-              </span>
-              Marketing Partner
-            </p>
+            <img
+            src="/img/rera.jpg"
+            alt="Project RERA Registration"
+            className="
+              w-40
+              sm:w-56
+              md:w-64
+              lg:w-72
+              max-w-full
+              h-auto
+              object-contain
+              drop-shadow-[0_18px_55px_rgba(0,0,0,0.85)]
+            "
+          />
+
           </div>
         </div>
       </div>

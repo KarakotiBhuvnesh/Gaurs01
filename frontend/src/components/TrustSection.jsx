@@ -74,52 +74,10 @@ const TrustSection = () => {
           </div>
         </div>
 
-        {/* Trust Points Grid - Compact */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-10">
-          {projectData.trustPoints.map((point, index) => (
-            <div
-              key={index}
-              className="group flex items-start gap-3 bg-white rounded-lg md:rounded-xl p-4 md:p-5 shadow-md hover:shadow-lg transition-all border border-gray-200 hover:border-indigo-300"
-            >
-              {/* Check Icon */}
-              <div className="flex-shrink-0 w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg className="w-4 h-4 md:w-5 md:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              
-              {/* Point Text */}
-              <p className="flex-1 text-xs md:text-sm text-gray-800 leading-relaxed font-medium">
-                {point}
-              </p>
-            </div>
-          ))}
-        </div>
+
 
         {/* Developer Credibility Section - Compact */}
-        <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-6 md:p-8 border border-indigo-200">
-          <h3 className="text-lg md:text-xl font-bold text-gray-900 text-center mb-4 md:mb-6">
-            Developer Credentials
-          </h3>
-          <div className="grid md:grid-cols-2 gap-3 text-xs md:text-sm text-gray-700">
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full flex-shrink-0"></div>
-              <span>Award-winning developer with proven track record</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full flex-shrink-0"></div>
-              <span>Multiple phases successfully delivered on time</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full flex-shrink-0"></div>
-              <span>UP-RERA approved & legally compliant</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full flex-shrink-0"></div>
-              <span>Supreme Court monitored housing project</span>
-            </div>
-          </div>
-        </div>
+
 
         {/* Trust Badge Section - Mobile Cards */}
         <div className="mt-8 md:mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
